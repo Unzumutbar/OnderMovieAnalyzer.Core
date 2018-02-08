@@ -15,7 +15,7 @@ namespace OnderMovieAnalyzer.Logic
         public delegate void ProgressUpdate(ImportProgressType progresstype, string description, int value);
         public event ProgressUpdate OnProgressUpdate;
 
-        public List<Movie> ImportMovies(string[] filesToRead, MovieCollection movieCollection)
+        public MovieCollection ImportMoviesFromDumpFiles(string[] filesToRead, MovieCollection movieCollection)
         {
             var movieList = new List<Movie>();
             foreach (var txtFile in filesToRead)
@@ -39,16 +39,13 @@ namespace OnderMovieAnalyzer.Logic
                         {
                             var movie = FileHelper.GetMovieFromLine(line, fileName);
                             if (movie != null)
-                            {
-                                movieList.Add(movie);
                                 movieCollection.AddMovie(movie);
-                            }
                         }
                         OnProgressUpdate?.Invoke(ImportProgressType.NewLine, string.Empty, 0);
                     }
                 }
             }
-            return movieList;
+            return movieCollection;
         }
     }
 }

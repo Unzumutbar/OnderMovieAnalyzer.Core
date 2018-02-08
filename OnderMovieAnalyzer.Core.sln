@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnderMovieAnalyzer.Core", "OnderMovieAnalyzer.Core\OnderMovieAnalyzer.Core.csproj", "{FE077E66-C60A-4A60-97E4-FCF193CA9A6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnderMovieAnalyzer.Simple", "OnderMovieAnalyzer.Simple\OnderMovieAnalyzer.Simple.csproj", "{FE077E66-C60A-4A60-97E4-FCF193CA9A6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnderMovieAnalyzer.Logic", "OnderMovieAnalyzer.Logic\OnderMovieAnalyzer.Logic.csproj", "{62F8AACC-5B6B-499A-BACA-6A3D209C6D5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnderMovieAnalyzer.Logic", "OnderMovieAnalyzer.Logic\OnderMovieAnalyzer.Logic.csproj", "{62F8AACC-5B6B-499A-BACA-6A3D209C6D5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnderMovieAnalyzer.Common", "OnderMovieAnalyzer.Common\OnderMovieAnalyzer.Common.csproj", "{46391BBC-C5D5-42EE-8B4A-A634DF192991}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnderMovieAnalyzer.Common", "OnderMovieAnalyzer.Common\OnderMovieAnalyzer.Common.csproj", "{46391BBC-C5D5-42EE-8B4A-A634DF192991}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -360,5 +360,11 @@ namespace OnderMovieAnalyzer.Common.Utilities
                 outfile.Write(outputString);
             }
         }
+
+        public static void SaveToFile(string file, string[] lines)
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(file));
+            File.WriteAllLines(file, lines);
+        }
     }
 }

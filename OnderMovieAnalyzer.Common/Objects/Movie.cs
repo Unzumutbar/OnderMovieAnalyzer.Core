@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OnderMovieAnalyzer.Common.Enums;
+using System;
 
 namespace OnderMovieAnalyzer.Common.Objects
 {
@@ -19,6 +20,7 @@ namespace OnderMovieAnalyzer.Common.Objects
         public long Size { get; set; }
         public DateTime LastModified { get; set; }
         public string Location { get; set; }
+        public int DuplicateId { get; set; }
 
         public string FullSource
         {
@@ -34,6 +36,21 @@ namespace OnderMovieAnalyzer.Common.Objects
         public string FullPath
         {
             get { return string.Format(@"{0}\\{1}", Location, Path); }
+        }
+
+        public QualityType QualityType
+        {
+            get
+            {
+                if (Quality.Contains("hd"))
+                    return QualityType.HighDefinition;
+                if (Quality.Contains("hi"))
+                    return QualityType.High;
+                if (Quality.Contains("lo"))
+                    return QualityType.LowQuality;
+
+                return QualityType.Undefined;
+            }
         }
     }
 }

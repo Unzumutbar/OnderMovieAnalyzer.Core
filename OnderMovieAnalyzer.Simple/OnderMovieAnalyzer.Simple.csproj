@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon>farmer_grey.ico</ApplicationIcon>
+    <StartupObject>OnderMovieAnalyzer.Simple.Program</StartupObject>
+    <RootNamespace>OnderMovieAnalyzer.Simple</RootNamespace>
+    <AssemblyName>OnderMovieAnalyzer.Simple</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>.\bin\Debug\netcoreapp2.0\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>.\bin\Release\netcoreapp2.0\netcoreapp2.0\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnderMovieAnalyzer.Common\OnderMovieAnalyzer.Common.csproj" />
+    <ProjectReference Include="..\OnderMovieAnalyzer.Logic\OnderMovieAnalyzer.Logic.csproj" />
+  </ItemGroup>
+
+</Project>

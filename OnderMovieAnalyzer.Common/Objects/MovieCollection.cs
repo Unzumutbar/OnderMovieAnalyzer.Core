@@ -13,7 +13,12 @@ namespace OnderMovieAnalyzer.Common.Objects
         public MovieCollection(IOnderDatabase database)
         {
             _database = database;
-            _movies = _database.ReadMovieList().OrderBy(t => t.Name).ToList();
+            _movies = GetRefreshedList();
+        }
+
+        public List<Movie> Movies
+        {
+            get { return _movies; }
         }
 
         public List<Movie> GetList()
