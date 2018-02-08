@@ -7,14 +7,15 @@
     <StartupObject>OnderMovieAnalyzer.Simple.Program</StartupObject>
     <RootNamespace>OnderMovieAnalyzer.Simple</RootNamespace>
     <AssemblyName>OnderMovieAnalyzer.Simple</AssemblyName>
+    <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>.\bin\Debug\netcoreapp2.0\</OutputPath>
+    <OutputPath>..\bin\Debug\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath>.\bin\Release\netcoreapp2.0\netcoreapp2.0\</OutputPath>
+    <OutputPath>..\bin\Release\</OutputPath>
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
